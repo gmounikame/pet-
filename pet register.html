@@ -1,0 +1,41 @@
+<script src="https://kit.fontawesome.com/63fa84318a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="pet.js"></script>
+    <link rel="stylesheet" href="pet.css">
+<form id="frm1" action="https://codepen.io/YounesLmariouh/pen/zYYBGzx" class="login-form">
+     <h1>Register</h1>
+     <div class="search-box">
+            <input  class="search-txt" type="text" name="" placeholder="Type to Search">
+            <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+            </a>
+          </div>
+     <div id="userZone" class="txtb" >
+         <input id="user" type="text" onblur="Check();" onchange="BlurUser();"  required>
+         <span id="userspan" class="user" data-placeholder="Mail"></span>
+         <div id="user-error-msg" class="error" onclick="ClearUserMsg()"></div>
+         <div id="user-OK-msg" class="OK"></div>
+         <div id="user-warn-msg" class="Warning"></div>
+     </div>
+     <div id="numberZone" class="txtb">
+        <input id="number" type="text" onblur="CheckNumber();" onchange="BlurNumber();"  required>
+        <span id="numberspan" class="number" data-placeholder="Number"></span>
+        <div id="number-error-msg" class="error"></div>
+        <div id="number-OK-msg" class="OK"></div>
+        <div id="number-warn-msg" class="Warning"></div>
+    </div>
+     <div id="passwordZone" class="txtb">
+         <input id="password" type="password" onblur="CheckPassword();" onchange="BlurPassword();" required> 
+         <span id="passwordspan" class="password"  data-placeholder="Password"></span>
+         <div id="password-error-msg" class="error"></div> 
+         <div id="password-OK-msg" class="OK"></div>
+         <div id="password-warn-msg" class="Warning"></div>
+     </div>
+
+     <input id="login" type="submit" class="log-btn" value="Register" onclick="Warning()">
+     <input class="log-btn" type="button" onclick="ResetForm()" value="Reset" >
+     <div class="bottom-text">
+         Don't have account? <a href="#">Sign in</a>
+     </div>
+
+    </form>

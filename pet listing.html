@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption</title>
+  <style>
+
+
+    .pet-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .pet-card {
+      width: 300px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px palevioletred;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .pet-card:hover {
+      transform: scale(1.05);
+    }
+
+    .pet-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .pet-info {
+      padding: 15px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      height: 40px;
+      width: 100%;
+    }
+    button{
+        background-color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="pet-container">
+    <div class="pet-card">
+      <img class="pet-img" src="dog 2.jpg" alt="Dog">
+      <div class="pet-info">
+        <h2>Poodle</h2>
+        <p>Friendly dog looking for a loving home.</p>
+        <p>2years</p>
+        <button onclick="adoptPet('Dog')">Adopt</button>
+      </div>
+    </div>
+    <div class="pet-card">
+        <img class="pet-img" src="cat 2.jpg" alt="cat">
+        <div class="pet-info">
+          <h2>Tettra</h2>
+          <p>Cuddly cat in need of a forever family.</p>
+          <p>3years</p>
+          <button onclick="adoptPet('cat')">Adopt</button>
+        </div>
+      </div>
+
+    <div class="pet-card">
+      <img class="pet-img" src="fish 1.jpg" alt="fish">
+      <div class="pet-info">
+        <h2>Gold Fish</h2>
+        <p>Fish in need of a forever family.</p>
+        <p>2years</p>
+        <button onclick="adoptPet('fish')">Adopt</button>
+      </div>
+    </div>
+    <div class="pet-container">
+        <div class="pet-card">
+          <img class="pet-img" src="dog 1.jpg" alt="Dog">
+          <div class="pet-info">
+            <h2>Beagle</h2>
+            <p>Friendly dog looking for a loving home.</p>
+            <p>5years</p>
+            <button onclick="adoptPet('Dog')">Adopt</button>
+          </div>
+        </div>
+         <div class="pet-card">
+          <img class="pet-img" src="cat 1.jpg" alt="cat">
+          <div class="pet-info">
+            <h2>Maine</h2>
+            <p>Cuddly cat in need of a forever family.</p>
+            <p>2years</p>
+            <button onclick="adoptPet('Cat')">Adopt</button>
+          </div>
+        </div>
+        <div class="pet-card">
+            <img class="pet-img" src="fish 2.jpg" alt="cat">
+            <div class="pet-info">
+            <h2>Koi</h2>
+              <p> Fish in need of a forever family.</p>
+              <p>4years</p>
+              <button onclick="adoptPet('cat')">Adopt</button>
+            </div>
+          </div>
+        
+
+    <!-- Add more pet cards as needed -->
+  </div>
+  <footer>
+    <p>&copy; 2024 Pet Adoption Center</p>
+  </footer>
+
+  
+</body>
+</html>
